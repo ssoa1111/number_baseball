@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.wrap{
+    width: 300px;
+    height: 800px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    background: #caf0f8;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #ccc;
+    overflow: hidden;
+}
+#form{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0096c7;
+}
+#form #input-num{
+    height: 30px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+}
+#form .formBtn{
+    height: 30px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background: #ddd;
+    cursor: pointer;
+}
+.wrap .resultWrapper{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+}
+.wrap .resultWrapper #result{
+    width: 100%;
+}
+.wrap .resultWrapper #try{
+    color: #e63946;
+    font-size: 2rem;
+}
+.wrap .reset{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #0096c7;
+    opacity: 0;
+    transition: all 1s;
+}
+.wrap .reset .text{
+    width: 40%;
+    text-align: center;
+    color: #fff;
+}
+.wrap .reset .resetBtn{
+    width: 30%;
+    height: 30px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}

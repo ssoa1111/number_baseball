@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number-baseball</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <form id="form">
+            <input type="text" id="input-num" minlength="4" maxlength="4" placeholder="숫자를 입력하세요">
+            <!-- 
+                pattern : 정규표현식으로 입력값을 검사 > 중복되지 않은 4자리 
+                (아직 정규표현식 다 익히지 못했음, 추후에 구현)
+            -->
+            <button class="formBtn">확인</button>
+        </form>
+        <div class="resultWrapper"><span id="result"></span><b id="try"></b></div>
+        <div class="reset">
+            <p class="text"></p>
+            <button class="resetBtn">다시하기</button>
+        </div>
+    </div>
+</html>
